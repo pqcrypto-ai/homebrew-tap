@@ -4,6 +4,17 @@ Homebrew tap for [PQClens](https://github.com/pqcrypto-ai) tooling. A single
 multi-formula tap so all PQClens CLIs share the same `brew tap` and the same
 `brew upgrade` cycle.
 
+## Table of contents
+
+- [Available formulas](#available-formulas)
+- [Quick start (pqclens agent)](#quick-start-pqclens-agent)
+  - [Installing Homebrew on Linux (first-time only)](#installing-homebrew-on-linux-first-time-only)
+- [Supported platforms](#supported-platforms)
+- [Updating](#updating)
+- [Releasing a new version (maintainers)](#releasing-a-new-version-maintainers)
+- [Adding a new formula to this tap](#adding-a-new-formula-to-this-tap)
+- [History](#history)
+
 ## Available formulas
 
 | Formula | Install command | Description |
@@ -25,6 +36,28 @@ pqclens agent
 
 No separate `brew tap` step is needed — Homebrew resolves the tap from the
 slash-separated formula reference on first install.
+
+### Installing Homebrew on Linux (first-time only)
+
+macOS users almost always have Homebrew already. On Linux (Ubuntu/Debian
+shown below — adapt the package manager line for other distros) you need
+to install Homebrew first:
+
+```bash
+# 1. Install build dependencies
+sudo apt update
+sudo apt install build-essential procps curl file git
+
+# 2. Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 3. Add Homebrew to your PATH (bash; for zsh use ~/.zshrc instead)
+(echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> ~/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
+
+After that, `brew install pqcrypto-ai/tap/pqclens` works identically to
+macOS.
 
 ## Supported platforms
 
