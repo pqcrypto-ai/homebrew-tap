@@ -74,7 +74,7 @@ so the tool source code can stay private.
 
 ```bash
 brew update
-brew upgrade pqclens
+brew upgrade pqcrypto-ai/tap/pqclens (or brew upgrade pqclens)
 ```
 
 ## Releasing a new version (maintainers)
