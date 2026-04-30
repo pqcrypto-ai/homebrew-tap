@@ -1,7 +1,7 @@
 class Pqclens < Formula
   desc "Post-Quantum Cryptography vulnerability scanner agent"
   homepage "https://github.com/pqcrypto-ai/pqclens-releases"
-  version "0.2.0"
+  version "0.3.1"
   license :cannot_represent
 
   # Binaries are hosted in a separate public release repo
@@ -11,22 +11,22 @@ class Pqclens < Formula
   on_macos do
     on_arm do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-darwin-arm64.tar.gz"
-      sha256 "9a357ac13c447c1b528f635933896deca747a51a16a3dbe114609e8589857b94"
+      sha256 "7c1b35a567fca0ca13e4827de5bc31628187d45e0f9cdfd7c76df471668c16dc"
     end
     on_intel do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-darwin-amd64.tar.gz"
-      sha256 "e0f8478680b081f6918d1357d7289b7a03c4c007eb572e1bb7ba6fbe34d533ff"
+      sha256 "31b3e6d4fb1a9aee6bb814d3c11a8b0d30a63faf819e4711f20028e871f66d49"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-linux-arm64.tar.gz"
-      sha256 "df52656ca946fb6d81b33484eca9a043b57e1b2d72feabe8869199bfd9ddaa3b"
+      sha256 "e7109b5a60ccb803631c4602b75b015987f80a5eee4318e54ebaf35273e0073f"
     end
     on_intel do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-linux-amd64.tar.gz"
-      sha256 "1aa9e73d104fe00837e650cfa4d829333da9d68c928e6f6d734f8c504afc769d"
+      sha256 "15eee897406de1281b0ac9fac05fdcba6927bed1734982febee8e8baf82e6923"
     end
   end
 
