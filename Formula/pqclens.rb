@@ -11,22 +11,22 @@ class Pqclens < Formula
   on_macos do
     on_arm do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-darwin-arm64.tar.gz"
-      sha256 "9596a14d996f7e0360fd456611658a53456bd21d2f3d8f9904a8180a169ec251"
+      sha256 "8ca6982808ccf021669fe4ce08dd50db60f2884808ff08471e5217f0cc419ed5"
     end
     on_intel do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-darwin-amd64.tar.gz"
-      sha256 "0e52989d8cd0f4b83049ea646ca411365e67a3f4e3c4e8879c92922ee55c928a"
+      sha256 "0ee4a6da9ac9fb32caaaf7aaadcb1c164882fa3d049edfc41d0dcf1eb17b424e"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-linux-arm64.tar.gz"
-      sha256 "fe861ef69c7887af630e2552c2ff2cd854883e944372cb34f3a20b420252733d"
+      sha256 "46acb68cd209816552697473fea83472fee83047cedbc3c66241a876e4ea8005"
     end
     on_intel do
       url "https://github.com/pqcrypto-ai/pqclens-releases/releases/download/v#{version}/pqclens-v#{version}-linux-amd64.tar.gz"
-      sha256 "da9f6446b8f7b6a12d5ec8f37041286e8fcaafa588966cfe1c44554be76b8e6c"
+      sha256 "d3528d4aa2b6fb6422c5f1e7c34cdfabce8a8c9ffbab9eaa8858e77064b75671"
     end
   end
 
